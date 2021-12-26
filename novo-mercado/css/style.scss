@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071e40;
+  width: 100%;
+  height: 100vh;
+}
+
+#text {
+  opacity: 0;
+  animation: animeTextOpacity 0s ease 3s forwards;
+  g path,
+  path {
+    animation: animeg 4s ease 3s forwards;
+  }
+}
+
+#Logo {
+  transform: translateX(120px);
+  transform-origin: center center;
+  animation: animeLogo 4s ease 0s forwards, animeLeftLogo 1s ease 2s forwards;
+  transform-box: fill-box;
+}
+
+@keyframes animeTextOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animeg {
+  0% {
+    opacity: 1;
+    fill-opacity: 0;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 1 1000;
+    stroke-dashoffset: 10;
+  }
+  30% {
+    opacity: 1;
+    fill-opacity: 0;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 260 20;
+    stroke-dashoffset: 20;
+  }
+  100% {
+    opacity: 1;
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 1000 1;
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes animeLogo {
+  0% {
+    opacity: 1;
+    fill-opacity: 0;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 1 1000;
+    stroke-dashoffset: 10;
+  }
+  30% {
+    opacity: 1;
+    fill-opacity: 0;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 260 20;
+    stroke-dashoffset: 20;
+  }
+  100% {
+    opacity: 1;
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    stroke-dasharray: 1000 1;
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes animeLeftLogo {
+  to {
+    transform: translateX(0);
+  }
+}
